@@ -1,4 +1,4 @@
-Pipeline
+pipeline {
   agent any
   
     stages {
@@ -8,4 +8,8 @@ Pipeline
                 echo "start"
                 echo "do somthing"
                 echo "end"
+            }
+        }
+    }
+}
                         
