@@ -4,6 +4,8 @@ pipeline {
   stages {
     stage('Stage 1') {
       steps {
+        wget https://raw.githubusercontent.com/Vorest35/devops_test/d04ab03e2baaf79c6a8135078f23640ec409d29e/readme.txt
+          cat readme.txt
         echo 'Hello world!'
       }
     }
