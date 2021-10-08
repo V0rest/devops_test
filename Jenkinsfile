@@ -11,8 +11,7 @@ pipeline {
                    println(data)
                }
            }
-       }
-              
+          
               
               
               
