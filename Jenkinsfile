@@ -6,7 +6,9 @@ pipeline {
         stage('JenkinsBuild') {
             steps {
                 echo "start"
-                echo "Soon I will be a DevOps engineer"
+              writeFile(file: 'readme.txt', text: main_text)
+sh("echo '${main_text}' >> readme.txt)
+               /*echo "Soon I will be a DevOps engineer"*/
                 echo "end"
             }
         }
