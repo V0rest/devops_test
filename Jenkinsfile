@@ -23,6 +23,8 @@ for (job in Jenkins.instance.getAllItems(Job.class)) {
   }
 }
         }
+        }
+        }
 }
           /*
 Jenkins.instance.items.find { it.name == Giuseppe }
