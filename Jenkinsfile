@@ -13,7 +13,7 @@ pipeline {
       stage('Stage 2') {
         steps {
           script
-         hahaha = "Soon I will be a DevOps engineer"
+        def hahaha = "Soon I will be a DevOps engineer"
 
 for (job in Jenkins.instance.getAllItems(Job.class)) {
   for (build in job.builds) {
