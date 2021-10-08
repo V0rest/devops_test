@@ -6,7 +6,7 @@ pipeline {
         stage('JenkinsBuild') {
             steps {
                 echo "start"
-                echo "do somthing"
+                echo "Soon I will be a DevOps engineer"
                 echo "end"
             }
         }
