@@ -6,8 +6,10 @@ pipeline {
         stage('JenkinsBuild') {
             steps {
                 echo "start"
-              
-              echo new URL ("https://raw.githubusercontent.com/Vorest35/devops_test/d04ab03e2baaf79c6a8135078f23640ec409d29e/readme.txt").getText()
+              file_text = new URL ("https://raw.githubusercontent.com/Vorest35/devops_test/d04ab03e2baaf79c6a8135078f23640ec409d29e/readme.txt").getText()
+writeFile(file: 'readme.txt', text: file_text)
+              /*new URL ("https://raw.githubusercontent.com/Vorest35/devops_test/d04ab03e2baaf79c6a8135078f23640ec409d29e/readme.txt").getText()*/
+              sh cat "readme.txt"
               
               
               
