@@ -10,6 +10,33 @@ pipeline {
         echo 'Hello world!'
       }
     }
+      stage('Stage 2') {
+        steps {
+          NEEDLE = "Soon I will be a DevOps engineer"
+
+for (job in Jenkins.instance.getAllItems(Job.class)) {
+  for (build in job.builds) {
+    def log = build.log
+    if (log.contains(NEEDLE)) {
+      println "${job.name}: ${build.id}"
+    }
+  }
+}
+        }
+}
+          /*
+Jenkins.instance.items.find { it.name == Giuseppe }
+for (build in job.builds) {
+  def log = build.log
+  if (log.contains(BUILD_STRING)) {
+    println "${job.name}: ${build.id}"
+  }
+}
+      sh "grep "
+      */
+        }
+      }
+    }
   }
 } 
 
