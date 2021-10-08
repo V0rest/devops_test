@@ -58,5 +58,4 @@ sh("echo '${main_text}'" >> readme.txt)*/
             }
         }
     }
-}
-}                        
+                      
