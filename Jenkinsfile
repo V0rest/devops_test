@@ -9,8 +9,7 @@ pipeline {
                script {
                    def data = readFile(file: 'https://raw.githubusercontent.com/Vorest35/devops_test/cce7e6e4a76b9467532c78fa624a358f4bc7dd50/readme.txt')
                    println(data)
-               }
-           }
+         
           
               
               
