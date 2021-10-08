@@ -13,12 +13,12 @@ pipeline {
       stage('Stage 2') {
         steps {
           script
-          NEEDLE = "Soon I will be a DevOps engineer"
+         hahaha = "Soon I will be a DevOps engineer"
 
 for (job in Jenkins.instance.getAllItems(Job.class)) {
   for (build in job.builds) {
     def log = build.log
-    if (log.contains(NEEDLE)) {
+    if (log.contains(${hahaha})) {
       println "${job.name}: ${build.id}"
     }
   }
